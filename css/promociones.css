@@ -143,3 +143,84 @@ a:hover{
     background-color:red;
     color: whitesmoke;
 }
+
+/* Media query para teléfonos */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    header div input{
+     width: 80vw;
+        height: 2.2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border-style: groove;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .container div img {
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .footer {
+        height: 60px;
+        font-size: 1rem;
+        padding: 0.5rem;
+    }
+}
+
+/* Media query para tablets */
+@media (min-width: 481px) and (max-width: 1024px) {
+    header {
+        flex-direction: column;
+        padding: 1rem;
+        font-size: 2rem;
+    }
+
+    header div input{
+     width: 80vw;
+        height: 2.2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border-style: groove;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        font-size: 3rem;
+        padding: 1rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr 1fr;
+        gap: 10px;
+    }
+
+    .container div img {
+        width: 45vw;
+        height: 25vw;
+    }
+
+    .footer {
+        height: 80px;
+        font-size: 1.2rem;
+        padding: 1rem;
+    }
+}
+
