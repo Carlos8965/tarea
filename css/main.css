@@ -1,7 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
 *{
     margin: 0.2rem;
     padding: 0;
     border: 0;
+    @import 'package:google_fonts/google_fonts.dart';
 }
 body{
     background-image: url(https://res.cloudinary.com/dzoewfn82/image/upload/v1747186589/samples/man-on-a-street.jpg);
@@ -56,21 +61,16 @@ input[type="text"]::placeholder {
   text-align: left;
 }
 
-ul{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    border-radius: 10px;  
-    padding: 5px; 
-    width: 100px;
-
-}
 /*Cuerpo de la pagina*/
 section{
     display: block;
 }
 
 .banner{
+    font-family: "Kapakana", cursive;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     display: flex;
     box-sizing: border-box;
     text-align: center;
@@ -78,7 +78,7 @@ section{
     align-content: center;
     padding: 1%;
     color: white;
-    font-size: 2rem;
+    font-size: 4rem;
     background: #020024;
     background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 45%, rgba(0, 212, 255, 1) 100%)
 }
@@ -100,6 +100,9 @@ a:hover{
 }
 
 .container div{
+    font-family: "WDXL Lubrifont TC", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     color: white;
     font-size: 1.5rem;
     background: #020024;
@@ -136,6 +139,10 @@ a:hover{
 /*Footer de la pagina web*/
 
 .footer{
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: weight;
+    font-style: normal;
     margin-top:50px;
     width:100%;
     height:100px;
