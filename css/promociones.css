@@ -132,56 +132,51 @@ a:hover{
 
 /*Footer de la pagina web*/
 
-.footer{
+.footer {
     font-family: "Playfair Display", serif;
     font-optical-sizing: auto;
     font-weight: weight;
     font-style: normal;
-    margin-top:50px;
-    width:100%;
-    height:100px;
-    background-color:red;
+    margin-top: 40px;
+    width: 100%;
+    min-height: 100px;     
+    height: auto;          
+    background-color: #D3141A; 
     color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 1rem;  
 }
 
-/* Media query para teléfonos */
-@media (max-width: 480px) {
-    header {
-        flex-direction: column;
-        padding: 0.5rem;
-        font-size: 1.5rem;
-    }
+.redes-sociales {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 10px;
+    z-index: 2;
+}
 
-    header div input{
-     width: 80vw;
-        height: 2.2rem;
-        padding: 0.5rem 1rem;
-        font-size: 1rem;
-        border-radius: 10px;
-        border-style: groove;
-        box-sizing: border-box;
-    }
+.redes-sociales a {
+    color: whitesmoke;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s, transform 0.3s;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    background: rgba(0,0,0,0.15); 
+    border-radius: 50%;
+    padding: 8px;
+}
 
-    .banner {
-        font-size: 2rem;
-        padding: 0.5rem;
-    }
-
-    .container {
-        grid-template-columns: 1fr;
-        gap: 5px;
-    }
-
-    .container div img {
-        width: 90vw;
-        height: 40vw;
-    }
-
-    .footer {
-        height: 60px;
-        font-size: 1rem;
-        padding: 0.5rem;
-    }
+.redes-sociales a:hover {
+    color: #1E8449;
+    background: rgba(255,255,255,0.2);
+    transform: scale(1.15);
 }
 
 /* Media query para tablets */
@@ -193,7 +188,7 @@ a:hover{
     }
 
     header div input{
-     width: 80vw;
+        width: 80vw;
         height: 2.2rem;
         padding: 0.5rem 1rem;
         font-size: 1rem;
@@ -218,9 +213,127 @@ a:hover{
     }
 
     .footer {
-        height: 80px;
-        font-size: 1.2rem;
-        padding: 1rem;
+        height: auto;
+        font-size: 1.1rem;
+        padding: 1rem 0.5rem;
+        margin-top: 60px;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        gap: 15px;
+        margin-top: 10px;
+    }
+
+    .redes-sociales a {
+        font-size: 1.7rem;
+        padding: 7px;
     }
 }
 
+/* Media query para teléfonos */
+@media (max-width: 480px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    header div input{
+        width: 80vw;
+        height: 2.2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border-style: groove;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .container div img {
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .footer {
+        height: auto;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.2rem;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .redes-sociales a {
+        font-size: 1.5rem;
+        padding: 6px;
+    }
+}
+
+/* MEDIA QUERY PARA TELEFONOS CON PANTALLA -480PX */
+@media (max-width: 320px) {
+    header {
+        flex-direction: column;
+        padding: 0.5rem;
+        font-size: 1.5rem;
+    }
+
+    header div input{
+        width: 80vw;
+        height: 2.2rem;
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+        border-radius: 10px;
+        border-style: groove;
+        box-sizing: border-box;
+    }
+
+    .banner {
+        font-size: 2rem;
+        padding: 0.5rem;
+    }
+
+    .container {
+        grid-template-columns: 1fr;
+        gap: 5px;
+    }
+
+    .container div img {
+        width: 90vw;
+        height: 40vw;
+    }
+
+    .footer {
+        height: auto;
+        font-size: 0.9rem;
+        padding: 0.5rem 0.2rem;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .redes-sociales {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 8px;
+    }
+
+    .redes-sociales a {
+        font-size: 1.5rem;
+        padding: 6px;
+    }
+}
