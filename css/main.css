@@ -143,7 +143,26 @@ a:hover{
   box-shadow: 0 4px 16px rgba(0,0,0,0.3);
 }
 
-
+.btn-regresar {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    background: #D3141A;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 2rem;         /* Aumenta el padding */
+    font-size: 1.3rem;          /* Aumenta el tamaño de fuente */
+    font-weight: bold;
+    cursor: pointer;
+    margin: 2rem 0 1.5rem 2rem; /* Más margen */
+    box-shadow: 0 2px 12px rgba(0,0,0,0.12);
+    transition: background 0.3s, transform 0.2s;
+}
+.btn-regresar:hover {
+    background: #a50f13;
+    transform: scale(1.05);
+}
 /*Footer de la pagina web*/
 
 .footer{

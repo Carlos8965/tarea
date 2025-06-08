@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=WDXL+Lubrifont+TC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kapakana:wght@300..400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+.catalogo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin: 2rem 0;
+}
+.catalogo-h1 {
+    display: flex;
+    box-sizing: border-box;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    padding: 1%;
+    color: white;
+    font-size: 3rem;
+    background: #020024;
+    background: linear-gradient(90deg,rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 45%, rgba(0, 212, 255, 1) 100%)
+}
+.producto {
+    background: #fff;
+    color: #222;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    width: 220px;
+    padding: 1rem;
+    text-align: center;
+}
+.producto img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.producto img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+}
+.producto h2 {
+    margin: 1rem 0 0.5rem 0;
+    font-size: 1.2rem;
+}
+.precio {
+     color: #D3141A;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+.producto button {
+    background: #1E8449;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 0.5rem 1.2rem;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background 0.3s;
+}
+.producto button:hover {
+background: #145A32;
+}
