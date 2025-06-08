@@ -135,6 +135,14 @@ a:hover{
     justify-content: space-around;
 }
 
+.container img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+.container img:hover {
+  transform: scale(1.07);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.3);
+}
+
 
 /*Footer de la pagina web*/
 
